@@ -1,6 +1,6 @@
 # CinetPay - Ionic 3
 
-cinetpay-ionic3 est un template starter qui permet intégre CinetPay
+cinetpay-ionic3 est un template starter qui intégre le seamless CinetPay
 
 Il vous faut au préalable avoir une autorisation par CinetPay pour utiliser le seamless Integration
 
