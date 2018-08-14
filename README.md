@@ -2,8 +2,7 @@
 
 cinetpay-ionic3 est un template starter qui intégre le seamless CinetPay
 
-Il vous faut au préalable avoir une autorisation par CinetPay pour utiliser le seamless Integration
-
+Il vous faut au préalable avoir une autorisation par CinetPay pour utiliser le seamless Integration.
 Pour avoir une autorisation, veuillez envoyez un mail à [support@cinetpay.com](mailto:support@cinetpay.com)
 
 ## Compatibilité 
