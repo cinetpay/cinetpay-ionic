@@ -11,8 +11,7 @@ $font-path: "../assets/fonts";
 // http://ionicframework.com/docs/theming/rtl-support/
 $app-direction: ltr;
 
-
-@import "ionic.globals";
+@import "ionic.globals";@import url('https://fonts.googleapis.com/css?family=Ubuntu');
 
 
 // Shared Variables
@@ -38,7 +37,8 @@ $colors: (
   secondary:  #32db64,
   danger:     #f53d3d,
   light:      #f4f4f4,
-  dark:       #222
+  dark:       #222,
+  cinetpay : #32b34a
 );
 
 
@@ -46,21 +46,27 @@ $colors: (
 // --------------------------------------------------
 // iOS only Sass variables can go here
 
-
+ion-app {
+    font-family: 'Ubuntu', sans-serif !important;
+}
 
 
 // App Material Design Variables
 // --------------------------------------------------
 // Material Design only Sass variables can go here
 
-
+ion-app {
+  font-family: 'Ubuntu', sans-serif !important;
+}
 
 
 // App Windows Variables
 // --------------------------------------------------
 // Windows only Sass variables can go here
 
-
+ion-app {
+  font-family: 'Ubuntu', sans-serif !important;
+}
 
 
 // App Theme

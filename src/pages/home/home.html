@@ -1,14 +1,34 @@
 <ion-header>
-  <ion-navbar>
-    <ion-title>
-      Ionic Blank
+  <ion-navbar color="cinetpay">
+    <ion-title text-center>
+      Accueil
     </ion-title>
   </ion-navbar>
 </ion-header>
 
 <ion-content padding>
-  The world is your oyster.
-  <p>
-    If you get lost, the <a href="http://ionicframework.com/docs/v2">docs</a> will be your guide.
-  </p>
+  <div text-center>
+    <img src="assets/icon/cinetpay.png" class="logo">
+  </div>
+  <div text-center class="give-title">Faire un don</div>
+  <form [formGroup]="payForm" (ngSubmit)="onSubmit()">
+    <ion-list no-lines>
+      <ion-item>
+        <ion-label stacked color="dark">Montant</ion-label>
+        <ion-input type="tel" color="danger" formControlName="amount" [ngClass]="{ 'is-invalid': submitted && f.amount.errors }"></ion-input>
+      </ion-item>
+      <div *ngIf="submitted && f.amount.errors" class="invalid-feedback">
+        <ion-item *ngIf="f.amount.errors.required" class="error">
+            Le montant est obligatoire
+        </ion-item>
+        <ion-item *ngIf="f.amount.errors.minlength" class="error">
+          Le montant doit être supérieur ou égale à 2
+        </ion-item>
+      </div>
+    </ion-list>
+    <button ion-button block color="cinetpay" mode="ios">Faire le don</button>
+  </form>
 </ion-content>
+<ion-footer text-center>
+  <p>Version 0.0.3</p>
+</ion-footer>
