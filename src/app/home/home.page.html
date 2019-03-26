@@ -1,0 +1,18 @@
+<ion-header mode="ios">
+  <ion-toolbar color="success" mode="ios">
+    <ion-title>
+      Ion-CinetPay
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content padding>
+
+  <ion-item>
+    <ion-label position="floating">Montant à payer</ion-label>
+    <ion-input type="number" placeholder="Ex : 200" [(ngModel)]="amount" color="success" min="100"></ion-input>
+  </ion-item>
+  <ion-item lines="none">Montant minimum 100 FCFA</ion-item>
+  <ion-button color="success" expand="block" shape="round" mode="ios" (click)="pay()">Payer</ion-button>
+
+</ion-content>

@@ -1,5 +1,7 @@
 {
-  "name": "cinetpay-ionic3",
-  "integrations": {},
-  "type": "ionic-angular"
+  "name": "cinetpay-ionic",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "angular"
 }
