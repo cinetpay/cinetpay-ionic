@@ -72,8 +72,8 @@ if (isset($_POST['cpm_trans_id'])) {
 ### Page de Notification
 
 ### Intégration:
-```bash
-    < script charset="utf-8" src="https://www.cinetpay.com/cdn/seamless_sdk/latest/cinetpay.prod.min.js" type="text/javascript">< /script> 
+```html
+    <script charset="utf-8" src="https://www.cinetpay.com/cdn/seamless_sdk/latest/cinetpay.prod.min.js" type="text/javascript"></script> 
 ```
 
 ### Service CinetPay :
@@ -139,7 +139,7 @@ Ajouter dans ionicApp/src/app/services/cinetpay.service.ts
             });
       
             CinetPay.setSignatureData({
-              amount: parseInt(amount),
+              amount: amount,
               trans_id: this.trans_id,
               currency: this.currency,
               designation: this.designation,
