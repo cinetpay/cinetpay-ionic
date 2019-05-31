@@ -9,7 +9,7 @@ export class CinetpayService {
 
     private CinetPay: any;
 
-    private apikey: string = 'YOUR_API_KEY';
+    private apikey: string =  'YOUR_API_KEY';
     private site_id: number = 1; //YOUR SITE_ID
     private notify_url: string = 'https://YOUR_NOTIFY_URL';
   
@@ -34,10 +34,13 @@ export class CinetpayService {
         });
         //Lorsque la signature est généré
         CinetPay.on('signatureCreated', function (token) {
-          console.log('Tocken généré: ' + token);
+          //console.log('Tocken généré: ' + token);
         });
         CinetPay.on('paymentPending', function (e) {
-          
+          //console.log('code:' + e.code + 'Message::' + e.message);
+        });
+        CinetPay.on('error', function (e) {
+          //console.log('Error code:' + e.code + 'Message::' + e.message);
         });
         CinetPay.on('paymentSuccessfull', function (paymentInfo) {
           resolve(paymentInfo);
