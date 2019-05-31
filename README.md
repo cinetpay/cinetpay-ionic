@@ -121,10 +121,13 @@ Ajouter dans ionicApp/src/app/services/cinetpay.service.ts
             });
             //Lorsque la signature est généré
             CinetPay.on('signatureCreated', function (token) {
-              console.log('Tocken généré: ' + token);
+              //console.log('Tocken généré: ' + token);
             });
             CinetPay.on('paymentPending', function (e) {
-              
+              //console.log('code:' + e.code + 'Message::' + e.message);
+            });
+            CinetPay.on('error', function (e) {
+              //console.log('Error code:' + e.code + 'Message::' + e.message);
             });
             CinetPay.on('paymentSuccessfull', function (paymentInfo) {
               resolve(paymentInfo);
