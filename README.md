@@ -169,7 +169,7 @@ Dans la page de paiement : Ex : ionicApp/src/app/home/home.page.html :
 
 Dans la page de paiement : Ex : ionicApp/src/app/home/home.page.ts :
 ```js
-amount : number = 5;
+amount : number = 100;
 
 constructor(private cinetpay : CinetpayService) {}
 
